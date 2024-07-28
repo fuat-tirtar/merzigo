@@ -1,0 +1,12 @@
+    1  sudo apt update -y && sudo apt upgrade -y 
+    2  sudo apt install -y git curl wget build-essential
+    3  sudo apt-get remove docker docker-engine docker.io containerd runc
+    4  sudo apt autoremove
+    5  sudo apt-get update
+    6  sudo apt-get install   ca-certificates   curl   gnupg
+    7  sudo mkdir -m 0755 -p /etc/apt/keyrings
+    8   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+    9   echo   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+ "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   10  sudo apt-get update
+   11  sudo apt-get install  -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugi
