@@ -37,6 +37,7 @@ Sertifikayı ekledikten sonra, curl komutunu doğrulama ile çalıştırabilirsi
 curl https://52.19.220.25
 --------------------------------------------------------------------------
 Çıktılar: 
+
 curl -I http://52.19.220.25
 HTTP/1.1 200 
 Server: nginx/1.24.0 (Ubuntu)
