@@ -21,7 +21,6 @@ Sertifikayı curl ile Güvenilir Hale Getirme
 Eğer self-signed sertifikayı curl ile geçerli olarak tanıtmak isterseniz, sertifikayı curl'ın sertifika deposuna ekleyebilirsiniz.
 
 1.Adım: Sertifikayı İndiriyoruz:
-Sertifikayı bir dosyaya indirin (örneğin nginx.crt):
 sudo cp /etc/nginx/ssl/nginx.crt /home/ubuntu/nginx.crt
 
 2. Adım: Sertifikayı curl ile Kullanma:
