@@ -1,7 +1,11 @@
 Sunucu aws üzerinde çalışmakta olup, aws içerisinde Ubuntu 24.04 kullanılmıştır.
+
 Url bilgisi: 52.19.220.25
+
 self-signed sadece test ve geliştirme ortamları için kullanılır.
+
 Let's Encrypt kullanılmamasının sebebi; Let's Encrypt bir alan adı gerektirir. Bu durumda, gerçek bir alan adı almalı ve DNS kayıtlarını yaptırmamız gereklidir.
+
 --------------------------------------------------------------------------
 http çıktısı doğru gelirken, https çıktısında şu hata alınmaktadır.
 curl -I https://52.19.220.25
