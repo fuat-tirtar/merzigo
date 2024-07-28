@@ -39,6 +39,7 @@ curl https://52.19.220.25
 Çıktılar: 
 
 curl -I http://52.19.220.25
+
 HTTP/1.1 200 
 Server: nginx/1.24.0 (Ubuntu)
 Date: Sun, 28 Jul 2024 20:45:17 GMT
@@ -54,6 +55,7 @@ X-Frame-Options: DENY
 Content-Language: en-US
 --------------------------------------------------------------------------
 curl -I https://52.19.220.25
+
 HTTP/1.1 200 
 Server: nginx/1.24.0 (Ubuntu)
 Date: Sun, 28 Jul 2024 20:45:24 GMT
