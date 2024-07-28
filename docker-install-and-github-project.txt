@@ -9,4 +9,10 @@
     9   echo   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
    10  sudo apt-get update
-   11  sudo apt-get install  -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugi
+   11  sudo apt-get install  -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   
+   sudo git clone https://github.com/benc-uk/java-demoapp.git 
+   sudo cp /home/ubuntu/java-demoapp/build/Dockerfile /home/ubuntu/java-demoapp/
+
+   sudo docker build -t java-demoapp .
+   sudo docker run -d --name java-demoapp -p 8080:8080 java-demoapp
