@@ -1,7 +1,8 @@
-Sunucu aws üzerinde bulunmaktadır. Aws içerisinde Ubuntu 24.04 kullanılmıştır.
-Url bilgisi: 52.19.220.25.
+Sunucu aws üzerinde çalışmakta olup, aws içerisinde Ubuntu 24.04 kullanılmıştır.
+Url bilgisi: 52.19.220.25
+self-signed sadece test ve geliştirme ortamları için kullanılır.
 Let's Encrypt kullanılmamasının sebebi; Let's Encrypt bir alan adı gerektirir. Bu durumda, gerçek bir alan adı almalı ve DNS kayıtlarını yaptırmamız gereklidir.
-----------------------------------------------------------------------
+--------------------------------------------------------------------------
 http çıktısı doğru gelirken, https çıktısında şu hata alınmaktadır.
 curl -I https://52.19.220.25
 curl: (60) SSL certificate problem: self-signed certificate
@@ -30,7 +31,7 @@ sudo update-ca-certificates
 4. Adoım : Sonra curl Komutunu Tekrar Çalıştırıyoruz.
 Sertifikayı ekledikten sonra, curl komutunu doğrulama ile çalıştırabilirsiniz:
 curl https://52.19.220.25
-----------------------------------------------------------------------
+--------------------------------------------------------------------------
 Çıktılar: 
 curl -I http://52.19.220.25
 HTTP/1.1 200 
