@@ -5,6 +5,7 @@ sudo nano /etc/nginx/sites-available/default
 server {
     listen 80;
     server_name 52.19.220.25;
+    return 301 https://$host$request_uri;
 
     location /.well-known/pki-validation/ {
         root /home/ubuntu;
@@ -20,7 +21,8 @@ server {
     }
 }
 
-server {
+
+server{
     listen 443 ssl;
     server_name 52.49.79.164;
 
@@ -43,6 +45,7 @@ server {
         try_files $uri =404;
     }
 }
+
 Zero ssl kullanımı için http upload yüklemesi yapıldı. (https güvenilir olarak açılsın)
 sudo mkdir -p /home/ubuntu/.well-known/pki-validation
 sudo mv D0942FE87AC6B739120B6BF23B979886.txt( zerossl üzerinden indirilen key) /home/ubuntu/.well-known/pki-validation/
