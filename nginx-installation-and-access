@@ -52,7 +52,5 @@ Yetkilendirmeler:
    2  sudo chmod 755 /home/ubuntu/.well-known/pki-validation
    3  sudo chmod 644 /home/ubuntu/.well-known/pki-validation/D0942FE87AC6B739120B6BF23B979886.txt 
 
-
-
    sudo nginx -t
    sudo systemctl restart nginx
