@@ -70,4 +70,6 @@ Content-Language: en-US
 ---------------------------------------------------------------------------
 http ve https ayrı tuttum. yönlendirme yapmadım. https güvenilir hale getirmek için zerossl kullandım.
 ![image](https://github.com/user-attachments/assets/03d501a2-607d-4d79-bbff-601c9e7b6262)
+indirdiğim pem ve crt dosyalarını kaynak gösterdim.
+
 
