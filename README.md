@@ -68,3 +68,6 @@ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 X-Frame-Options: DENY
 Content-Language: en-US
 ---------------------------------------------------------------------------
+http ve https ayrı tuttum. yönlendirme yapmadım. https güvenilir hale getirmek için zerossl kullandım.
+![image](https://github.com/user-attachments/assets/03d501a2-607d-4d79-bbff-601c9e7b6262)
+
