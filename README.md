@@ -1,6 +1,6 @@
 Sunucu aws üzerinde çalışmakta olup, aws içerisinde Ubuntu 24.04 kullanılmıştır.
 
-Url bilgisi: 18.201.218.193
+Url bilgisi: 52.49.79.164
 
 self-signed sadece test ve geliştirme ortamları için kullanılır.
 
@@ -8,7 +8,7 @@ Let's Encrypt kullanılmamasının sebebi; Let's Encrypt bir alan adı gerektiri
 
 --------------------------------------------------------------------------
 http çıktısı doğru gelirken, https çıktısında şu hata alınmaktadır.
-curl -I https://18.201.218.193
+curl -I https://52.49.79.164
 curl: (60) SSL certificate problem: self-signed certificate
 More details here: https://curl.se/docs/sslcerts.html
 
@@ -25,7 +25,7 @@ sudo cp /etc/nginx/ssl/nginx.crt /home/ubuntu/nginx.crt
 
 2. Adım: Sertifikayı curl ile Kullanma:
 curl komutunu sertifika dosyasını belirterek kullanabilirsiniz.
-curl --cacert /home/ubuntu/nginx.crt https://18.201.218.193
+curl --cacert /home/ubuntu/nginx.crt https://52.49.79.164
 
 3. Adım:  Sertifikayı Sistem Sertifika Deposu ile Güvenilir Hale Getirme
 Sertifikayı Sistem Sertifika Deposuna Ekleme:
@@ -33,11 +33,11 @@ sudo cp /etc/nginx/ssl/nginx.crt /usr/local/share/ca-certificates/nginx.crt
 sudo update-ca-certificates
 4. Adoım : Sonra curl Komutunu Tekrar Çalıştırıyoruz.
 Sertifikayı ekledikten sonra, curl komutunu doğrulama ile çalıştırabilirsiniz:
-curl https://18.201.218.193
+curl https://52.49.79.164
 --------------------------------------------------------------------------
 Çıktılar: 
 
-curl -I http://18.201.218.193
+curl -I http://52.49.79.164
 HTTP/1.1 200 
 Server: nginx/1.24.0 (Ubuntu)
 Date: Sun, 28 Jul 2024 20:45:17 GMT
@@ -52,7 +52,7 @@ Expires: 0
 X-Frame-Options: DENY
 Content-Language: en-US
 --------------------------------------------------------------------------
-curl -I https://18.201.218.193
+curl -I https://52.49.79.164
 HTTP/1.1 200 
 Server: nginx/1.24.0 (Ubuntu)
 Date: Sun, 28 Jul 2024 20:45:24 GMT
