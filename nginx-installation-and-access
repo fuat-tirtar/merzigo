@@ -4,7 +4,7 @@ sudo openssl req -new -x509 -days 365 -nodes -out /etc/nginx/ssl/nginx.crt -keyo
 sudo nano /etc/nginx/sites-available/default
 server {
     listen 80;
-    server_name 52.19.220.25;
+    server_name 18.201.218.193;
 
     location / {
         proxy_pass http://localhost:8080;
@@ -18,7 +18,7 @@ server {
 # HTTPS server
 server {
     listen 443 ssl;
-    server_name 52.19.220.25;
+    server_name 18.201.218.193;
 
     ssl_certificate /etc/nginx/ssl/nginx.crt;
     ssl_certificate_key /etc/nginx/ssl/nginx.key;
