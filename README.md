@@ -2,9 +2,10 @@ Sunucu aws üzerinde çalışmakta olup, aws içerisinde Ubuntu 24.04 kullanılm
 
 Url bilgisi: 52.49.79.164
 
+Notlar:
 self-signed sadece test ve geliştirme ortamları için kullanılır.
-
 Let's Encrypt kullanılmamasının sebebi; Let's Encrypt bir alan adı gerektirir. Bu durumda, gerçek bir alan adı almalı ve DNS kayıtlarını yaptırmamız gereklidir.
+Sunucu İP si ile güvenli sertifika için ZeroSSL tercih ettim.
 
 --------------------------------------------------------------------------
 http çıktısı doğru gelirken, https çıktısında şu hata alınmaktadır.
