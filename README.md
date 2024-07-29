@@ -39,22 +39,19 @@ curl https://52.49.79.164
 --------------------------------------------------------------------------
 Çıktılar: 
 
-curl -I http://52.49.79.164
-HTTP/1.1 200 
+sudo curl -I http://52.49.79.164
+
+HTTP/1.1 301 Moved Permanently
 Server: nginx/1.24.0 (Ubuntu)
-Date: Sun, 28 Jul 2024 20:45:17 GMT
-Content-Type: text/html;charset=UTF-8
-Content-Length: 3868
+Date: Mon, 29 Jul 2024 11:54:16 GMT
+Content-Type: text/html
+Content-Length: 178
 Connection: keep-alive
-X-Content-Type-Options: nosniff
-X-XSS-Protection: 1; mode=block
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Pragma: no-cache
-Expires: 0
-X-Frame-Options: DENY
-Content-Language: en-US
+Location: https://52.49.79.164/
+
 --------------------------------------------------------------------------
 curl -I https://52.49.79.164
+
 HTTP/1.1 200 
 Server: nginx/1.24.0 (Ubuntu)
 Date: Sun, 28 Jul 2024 20:45:24 GMT
@@ -69,6 +66,7 @@ Expires: 0
 Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 X-Frame-Options: DENY
 Content-Language: en-US
+
 ---------------------------------------------------------------------------
 http ve httpsi yönlendirdim. https güvenilir hale getirmek için zerossl kullandım. 
 ![image](https://github.com/user-attachments/assets/03d501a2-607d-4d79-bbff-601c9e7b6262)
