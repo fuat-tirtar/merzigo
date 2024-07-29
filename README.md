@@ -30,8 +30,10 @@ curl --cacert /home/ubuntu/nginx.crt https://52.49.79.164
 3. Adım:  Sertifikayı Sistem Sertifika Deposu ile Güvenilir Hale Getirme
 Sertifikayı Sistem Sertifika Deposuna Ekleme:
 sudo cp /etc/nginx/ssl/nginx.crt /usr/local/share/ca-certificates/nginx.crt
+
 sudo update-ca-certificates
-4. Adoım : Sonra curl Komutunu Tekrar Çalıştırıyoruz.
+
+4. Adım : Sonra curl Komutunu Tekrar Çalıştırıyoruz.
 Sertifikayı ekledikten sonra, curl komutunu doğrulama ile çalıştırabilirsiniz:
 curl https://52.49.79.164
 --------------------------------------------------------------------------
