@@ -43,6 +43,16 @@ server {
         try_files $uri =404;
     }
 }
+Zero ssl kullanımı için http upload yüklemesi yapıldı. (https güvenilir olarak açılsın)
+sudo mkdir -p /home/ubuntu/.well-known/pki-validation
+sudo mv D0942FE87AC6B739120B6BF23B979886.txt( zerossl üzerinden indirilen key) /home/ubuntu/.well-known/pki-validation/
+sudo chmod 644 /home/ubuntu/.well-known/pki-validation/D0942FE87AC6B739120B6BF23B979886.txt
+Yetkilendirmeler:
+   1  sudo chmod 755 /home/ubuntu/.well-known
+   2  sudo chmod 755 /home/ubuntu/.well-known/pki-validation
+   3  sudo chmod 644 /home/ubuntu/.well-known/pki-validation/D0942FE87AC6B739120B6BF23B979886.txt 
+
+
 
    sudo nginx -t
    sudo systemctl restart nginx
